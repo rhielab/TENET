@@ -1,0 +1,17 @@
+Package: TENET
+Title: R package for TENET (Tracing regulatory Element Networks using Epigenetic Traits) to identify key transcription factors
+Description: TENET identifies key transcription factors (TFs) and regulatory elements (REs) linked to a specific cell type by finding significantly correlated differences in gene expression and RE methylation between case and control input datasets, and identifying the top genes by number of significant RE DNA methylation site links. It also includes many additional tools to aid in visualization and analysis of the results, including plots displaying and comparing methylation and expression data and RE DNA methylation site link counts, survival analysis, TF motif searching in the vicinity of linked RE DNA methylation sites, custom TAD and peak overlap analysis, and UCSC Genome Browser track file generation. A utility function is also provided to download methylation, expression, and patient survival data from The Cancer Genome Atlas (TCGA) for use in TENET or other analyses.
+Version: 0.99.0
+Authors@R: c(person("Rhie Lab at the University of Southern California", email = "rhielab@gmail.com", role = "cre"), person("Daniel", "Mullen", role = "aut", comment = c(ORCID = "0000-0002-7639-0549")), person("Zexun", "Wu", role = "aut", comment = c(ORCID = "0000-0003-2566-1326")), person("Ethan", "Nelson-Moore", role = "aut", comment = c(ORCID = "0009-0001-6903-9232")), person("Suhn", "Rhie", role = "aut", comment = c(ORCID = "0000-0002-5522-5296")))
+URL: https://github.com/rhielab/TENET
+BugReports: https://github.com/rhielab/TENET/issues
+License: GPL-2
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+BiocType: Software
+biocViews: Software, BiomedicalInformatics, CellBiology, Genetics, Epigenetics, MultipleComparison, GeneExpression, DifferentialExpression, DNAMethylation, DifferentialMethylation, MethylationArray, Sequencing, MethylSeq, RNASeq, FunctionalGenomics, GeneRegulation, GeneTarget, HistoneModification, Transcription, Transcriptomics, Survival, Visualization
+Depends: R (>= 4.4)
+Imports: graphics, grDevices, stats, utils, tools, S4Vectors, GenomicRanges, IRanges, parallel, pastecs, ggplot2, RCircos, survival, BSgenome.Hsapiens.UCSC.hg38, seqLogo, Biostrings, matlab, TCGAbiolinks, methods, R.utils, MultiAssayExperiment, SummarizedExperiment, sesame, sesameData, AnnotationHub, ExperimentHub, TENET.ExperimentHub, rtracklayer
+Suggests: TENET.AnnotationHub, knitr, rmarkdown, BiocStyle, MotifDb
+VignetteBuilder: knitr

@@ -1,0 +1,65 @@
+# History files
+.Rhistory
+.Rapp.history
+
+# Session data files
+.RData
+
+# User-specific files
+.exrc
+.Renviron
+.Rprofile
+.Ruserdata
+.tm_properties
+
+# Emacs editor backups
+.backups
+
+# Example code in the package build process
+*-Ex.R
+
+# Output files from R CMD build
+/*.tar.gz
+
+# Output files from R CMD check
+/*.Rcheck/
+
+# RStudio files
+.Rproj.user/
+*.Rproj
+
+# Produced vignettes and documentation
+vignettes/*.html
+*.pdf
+/doc/
+inst/doc
+/Meta/
+
+# OAuth2 token, see https://github.com/hadley/httr/releases/tag/v0.3
+.httr-oauth
+
+# knitr and R Markdown default cache directories
+*_cache/
+/cache/
+
+# Temporary files created by R Markdown and LaTeX
+*.utf8.md
+*.knit.md
+*.aux
+*.log
+unsrturl.bst
+
+# Temporary files created during vignette building
+.build.timestamp
+vignettes/*_files
+vignettes/*.R
+
+# .DS_Store files created by macOS
+.DS_Store
+
+# Like .DS_Store but created by the Dolphin file manager
+.directory
+
+# Bioconductor bans these files
+.gitattributes
+.gitmodules
